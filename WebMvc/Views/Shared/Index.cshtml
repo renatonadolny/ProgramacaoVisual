@@ -1,0 +1,21 @@
+@model WebMvc.Models.PessoaViewModel
+@{
+    ViewData ["Title"] = "Seja bem vindo";
+}
+<table>
+<thead>
+<tr>
+    <th>Id </th>
+    <th>Nome </th>
+</tr>
+</thead>
+<tbody>
+    @foreach (var item in Model.Items)
+    {
+        <tr>@item.Id</tr>
+        <tr>@item.Nome</tr>
+    }
+
+</tbody>
+
+</table>
